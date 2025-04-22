@@ -1,6 +1,7 @@
 <div class="form-container">
+  <div class="header">
     <h1>Get an Estimate for Workspace</h1>
-    
+    </div>
     <section class="description">
       <h2>Post Your Requirements</h2>
       <p>Please fill the form below to receive a quote for workspace.</p>
@@ -10,7 +11,7 @@
     <section class="contact-details">
       <h3>Contact details</h3>
       <p>Please fill your information so we can get in touch with you.</p>
-  
+      
       <form (ngSubmit)="onSubmit()">
         <app-custom-input 
           label="Name"
@@ -36,10 +37,10 @@
         <app-custom-input 
           label="Date"
           type="date"
-          placeholder="dd - mm - yyyy"
+          placeholder="day - mounth - year"
           [(value)]="formData.date"
         ></app-custom-input>
-  
+
         <div class="separator"></div>
   
         <app-custom-button 

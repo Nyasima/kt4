@@ -1,97 +1,123 @@
 /* Основные стили формы */
 .form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
   
-  /* Заголовок формы */
-  .form-container h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color : #333;
+  box-shadow: #333;
   
-  /* Секция с описанием */
-  .description {
-    margin-bottom: 30px;
-  }
+}
+
+.header {
+justify-content: center;
+  display: flex;
+  border-radius:18px ;
+  box-shadow:0px 1px 4px lightgray;
+}
+
+/* Заголовок формы */
+.form-container h1 {
+  font-size: 24px;
+  color: #170F49;
+  font-weight: bold;
+  margin-bottom: 20px;
   
-  .description h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+}
+
+
+/* Секция с описанием */
+.description {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 80px;
+color: #170F49;
+}
+
+.description h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+/* Секция контактных данных */
+.contact-details {
   
-  .description p {
-    font-size: 16px;
-    margin-bottom: 5px;
-    line-height: 1.4;
-  }
+  color: #170F49;
+  border: 1px;
+  margin-bottom: 20px;
+  border-radius:34px ;
+  box-shadow:0px 1px 4px lightgray;
+  background-color: #FAF8F8;
+}
+
+.contact-details h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Стили для разделителя */
+.separator {
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+/* Стили для кнопки (предполагая, что app-custom-button рендерит button) */
+app-custom-button button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+app-custom-button button:hover {
+  background-color: #0069d9;
+}
+
+/* Стили для полей ввода (предполагая, что app-custom-input рендерит input) */
+app-custom-input {
+  display: block;
+  margin-bottom: 15px;
+
+}
+
+app-custom-input label {
   
-  /* Секция контактных данных */
-  .contact-details {
-    margin-bottom: 20px;
-  }
-  
-  .contact-details h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .contact-details p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
-  
-  /* Стили для разделителя */
-  .separator {
-    height: 1px;
-    background-color: #ddd;
-    margin: 20px 0;
-  }
-  
-  /* Стили для кнопки (предполагая, что app-custom-button рендерит button) */
-  app-custom-button button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  app-custom-button button:hover {
-    background-color: #0069d9;
-  }
-  
-  /* Стили для полей ввода (предполагая, что app-custom-input рендерит input) */
-  app-custom-input {
-    display: block;
-    margin-bottom: 15px;
-  }
-  
-  app-custom-input label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 14px;
-  }
-  
-  app-custom-input input {
-    width: 100%;
-    padding: 8px 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  app-custom-input input::placeholder {
-    color: #999;
-  }
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+app-custom-input input {
+  width: 20%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+app-custom-input input::placeholder {
+  color: #999;
+}
