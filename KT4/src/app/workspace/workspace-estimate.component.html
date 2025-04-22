@@ -1,0 +1,51 @@
+<div class="form-container">
+    <h1>Get an Estimate for Workspace</h1>
+    
+    <section class="description">
+      <h2>Post Your Requirements</h2>
+      <p>Please fill the form below to receive a quote for workspace.</p>
+      <p>Please add all the details required.</p>
+    </section>
+  
+    <section class="contact-details">
+      <h3>Contact details</h3>
+      <p>Please fill your information so we can get in touch with you.</p>
+  
+      <form (ngSubmit)="onSubmit()">
+        <app-custom-input 
+          label="Name"
+          type="text"
+          placeholder="Your Name"
+          [(value)]="formData.name"
+        ></app-custom-input>
+  
+        <app-custom-input 
+          label="Phone Number"
+          type="tel"
+          placeholder="(123) 456 – 7890"
+          [(value)]="formData.phone"
+        ></app-custom-input>
+  
+        <app-custom-input 
+          label="Email"
+          type="email"
+          placeholder="Your Mail ID"
+          [(value)]="formData.email"
+        ></app-custom-input>
+  
+        <app-custom-input 
+          label="Date"
+          type="date"
+          placeholder="dd - mm - yyyy"
+          [(value)]="formData.date"
+        ></app-custom-input>
+  
+        <div class="separator"></div>
+  
+        <app-custom-button 
+          text="Submit"
+          (clicked)="onSubmit()"
+        ></app-custom-button>
+      </form>
+    </section>
+  </div>
